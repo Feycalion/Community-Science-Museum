@@ -14,17 +14,27 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/2435774798.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Community Science Museum | Home</title>
   </head>
 
   <body>
     <header>
       <div class="logotext">
-        <img src="images/csmlogo.png" alt="Community Science Museum Logo" />
+        <img src="images/csmlogo2.png" alt="Community Science Museum Logo" />
         <a href="index.html"> Community<span>Science</span>Museum </a>
       </div>
       <nav>
-        <ul>
+        <!-- burger menu -->
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <!-- burger menu end -->
+        <ul class="navlinks">
           <li><a href="exhibitions.html">Exhibitions</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="getinvolved.html">Get Involved</a></li>
@@ -34,12 +44,62 @@
     </header>
 
     <main>
-      <div>content</div>
+      <div class="hero">
+        <img
+          src="/images/hero.jpg"
+          alt="A colorful picture of an astronaut standing on a planet."
+        />
+      </div>
+
+      <!-- main sections -->
+
+      <div class="container">
+        <div class="box">
+          <h1>Exhibitions</h1>
+          <img
+            src="/images/cosmology.jpg"
+            alt="Children running through a tunnel lit up by stars."
+          />
+          <h2>Interactive Galaxy Tunnel</h2>
+          <p>
+            Ever wanted to have the universe at your fingertips? Our newly
+            installed touch-screen Galaxy Tunnel will let you do just that and
+            more!
+          </p>
+        </div>
+        <div class="box">
+          <h1>Events</h1>
+          <img
+            src="/images/visitingprofessor.jpg"
+            alt="Portrait of Professor Emma Thompson next to a shelf of chemicals."
+          />
+          <h2>Visiting Professor of Chemistry</h2>
+          <p>
+            Renowned chemist, Professor Emma Thompson, will be delivering a
+            series of three lectures on the latest advances and future prospects
+            in the field of chemistry.
+          </p>
+        </div>
+        <div class="box">
+          <h1>News</h1>
+          <img
+            src="/images/nightmuseum.jpg"
+            alt="A display of a dinosaur skeleton in the museum at night."
+          />
+          <h2>Night at the Museum</h2>
+          <p>
+            Join us for a thrilling family adventure as you spend a night at the
+            museum surrounded by the ancient creatures that once roamed the
+            Earth. Pack your sleeping bags and prepare for an unforgettable
+            evening of exploration and discovery.
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer>
       <div class="logotext">
-        <img src="images/csmlogo.png" alt="Community Science Museum Logo" />
+        <img src="images/csmlogo2.png" alt="Community Science Museum Logo" />
         <a href="index.html"> Community<span>Science</span>Museum </a>
       </div>
       <p>&copy; Community Science Museum</p>
