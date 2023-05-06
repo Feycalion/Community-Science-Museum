@@ -39,6 +39,7 @@ nav a,
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 36px;
 }
 
 .logotext img {
@@ -106,6 +107,7 @@ header label,
     top: 100%;
     right: 0;
     width: 50%;
+    z-index: 999;
   }
 }
 

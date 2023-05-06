@@ -1,5 +1,30 @@
-.hero img {
+/* .hero img {
   width: 100%;
+} */
+
+.hero {
+  background-image: url("/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 800px;
+  max-height: 1100px;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  padding: 15px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 42px;
+  max-width: 400px;
+  line-height: 64px;
+  letter-spacing: -0.025em;
+  background-color: rgba(98, 29, 75, 0.1);
+  border-radius: 6px;
 }
 
 .mobilecontainer {
@@ -11,24 +36,26 @@
   flex-direction: row;
   padding: 36px;
   color: rgba(17, 17, 17, 0.9);
+  align-items: center;
 }
 
 .box img {
-  width: auto;
-  max-width: 800px;
+  max-width: 50%;
+  height: auto;
   padding: 12px 0;
 }
 
-.box h1 {
+.box h2 {
   font-weight: 600;
   font-size: 36px;
   line-height: 36px;
   letter-spacing: -0.015em;
-  padding: 0 0 12px 0;
+  padding: 0 0 18px 0;
+  align-self: flex-start;
 }
 
-.box h2 {
-  padding: 0 0 12px 0;
+.box h3 {
+  padding: 0 0 18px 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 20px;
@@ -47,25 +74,135 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px;
+  padding: 12px 48px;
+  min-width: 600px;
+}
+
+.getinvolvedcont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 36px;
+  background-color: rgba(217, 227, 254, 1);
+  font-size: 24px;
+}
+
+.getinvolvedcont p {
+  padding: 34px;
 }
 
 .button1 a,
 .button1 {
+  display: flex;
+  justify-content: center;
   color: #fff;
   background-color: rgba(0, 86, 135, 1);
-  padding: 16px 0px;
+  padding: 16px 18px;
+  margin: 0;
   max-width: 8rem;
   border-radius: 6px;
-  font-weight: 500;
+  border: 1px solid rgba(0, 86, 135, 1);
+  font-weight: 600;
   font-size: 17px;
   letter-spacing: 0.5px;
   white-space: nowrap;
   text-align: center;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-@media (max-width: 1024px) {
+.button1:hover {
+  color: #fff;
+  background-color: rgb(0, 132, 209);
+  border: 1px solid rgb(0, 132, 209);
+}
+
+.button2 a,
+.button2 {
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 86, 135, 1);
+  background-color: #fff;
+  padding: 16px 18px;
+  margin: 16px;
+  max-width: 8rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 86, 135, 1);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button2:hover {
+  color: #fff;
+  background-color: rgb(0, 132, 209);
+  border: 1px solid rgb(0, 132, 209);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktopcontainer .box:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.desktopcontainer .box:nth-child(2),
+.mobilecontainer .box:nth-child(2) {
+  background-color: rgba(217, 227, 254, 1);
+}
+
+@media (max-width: 1124px) {
+  .hero {
+    min-height: 600px;
+    max-height: 1100px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    top: 20%;
+    left: 60%;
+    padding-left: 25px;
+    line-height: 52px;
+  }
+
+  .box2 {
+    padding: 12px 48px;
+    min-width: 400px;
+  }
+
+  .box h2 {
+    font-size: 28px;
+  }
+
+  .box h3 {
+    font-size: 20px;
+  }
+
+  .box p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero {
+    min-height: 500px;
+    max-height: 1100px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    top: 16%;
+    left: 58%;
+    padding-left: 25px;
+    line-height: 52px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -77,21 +214,36 @@
     display: block;
   }
 
+  .hero {
+    min-height: 400px;
+    max-height: 1100px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    top: 16%;
+    left: 60%;
+    padding-left: 15px;
+    line-height: 46px;
+  }
+
   .box {
     display: flex;
     flex-direction: column;
+    padding: 36px 36px;
   }
 
-  .box h1 {
+  .box h2 {
     font-size: 24px;
     padding: 0;
   }
 
   .box img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
-  .box h2 {
+  .box h3 {
     padding: 0 0 12px 0;
     font-size: 18px;
   }
@@ -99,7 +251,34 @@
   .box p {
     font-size: 16px;
   }
+
+  .button1 a,
+  .button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .getinvolvedcont {
+    padding: 36px 36px;
+  }
+  .getinvolvedcont p {
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 400px) {
+  .hero {
+    min-height: 360px;
+    max-height: 1100px;
+  }
+
+  .hero h1 {
+    font-size: 18px;
+    top: 14%;
+    left: 55%;
+    padding-left: 15px;
+    line-height: 28px;
+  }
 }
