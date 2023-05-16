@@ -47,7 +47,7 @@
   padding: 12px 0;
 }
 
-.box h3 {
+.box h2 {
   font-weight: 600;
   font-size: 36px;
   line-height: 36px;
@@ -189,7 +189,7 @@
     min-width: 400px;
   }
 
-  .box h3 {
+  .box h2 {
     font-size: 28px;
   }
 
@@ -224,7 +224,7 @@
     height: auto;
   }
 
-  .box h3 {
+  .box h2 {
     padding: 0 0 12px 0;
     font-size: 24px;
   }

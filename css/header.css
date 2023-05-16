@@ -31,7 +31,7 @@ nav a,
 .logotext a {
   color: #fff;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -39,23 +39,23 @@ nav a,
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 36px;
+  margin-left: 28px;
 }
 
 .logotext img {
-  max-width: 6rem;
+  max-width: 5rem;
 }
 
 .logotext a {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 150%;
 }
 
 .logotext span {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 header label,

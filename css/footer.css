@@ -21,7 +21,7 @@ footer li {
   margin: 0 10px;
   height: 100%;
   padding: 0 30px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 footer a {
@@ -61,25 +61,21 @@ footer p {
 
 @media (max-width: 768px) {
   footer li {
-    margin: 0 0px;
-    height: 100%;
-    padding: 16px 12px;
-    font-weight: 700;
+    margin: 16px 12px;
+    padding: 0;
   }
 
   .footerlinks {
-    padding: 24px 0;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 57px;
+    gap: 10px;
   }
   .linkscolumn {
-    display: block;
+    display: flex;
   }
 
   .textcolumn {
-    display: block;
+    display: flex;
   }
 }
 
