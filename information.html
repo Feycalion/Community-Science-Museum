@@ -8,6 +8,7 @@
       name="description"
       content="Plan your visit to our community science museum with ease. Discover our opening hours, ensuring you don't miss out on exploring our captivating exhibits. Learn about the range of facilities we offer, including wheelchair accessibility, audio guides for the visually impaired, a cozy café for refreshments, and a shop featuring unique memorabilia and educational resources."
     />
+    <link rel="icon" href="images/favicon.ico" type="favicon" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/information.css" />
     <link rel="stylesheet" href="css/header.css" />
@@ -18,20 +19,26 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/2435774798.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Community Science Museum | Information</title>
   </head>
   <body>
     <header>
       <div class="logotext">
-        <img src="images/csmlogo2.png" alt="Community Science Museum Logo" />
+        <a href="index.html"
+          ><img src="images/csmlogo2.png" alt="Community Science Museum Logo"
+        /></a>
         <a href="index.html"> Community<span>Science</span>Museum </a>
       </div>
       <nav>
         <!-- burger menu -->
         <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox">
-          <i class="fa-solid fa-bars"></i>
-          <span class="visuallyhidden"></span>
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          <span class="visually-hidden">Menu Checkbox</span>
         </label>
         <!-- burger menu end -->
         <ul class="navlinks">
@@ -99,8 +106,8 @@
             alt="The museum's café with the text Accessibility written over it"
           />
           <p>
-            There is a café attached to the museum where you can get light
-            lunches, soft drinks, coffee, snacks and more.
+            Visit the cozy café where you can get light lunches, soft drinks,
+            coffee, snacks and more.
           </p>
         </div>
         <div class="facilities">
@@ -111,7 +118,7 @@
           <p>
             Our shop offers a range of memorabilia from the museum as well as
             great gifts and activity packs that allow you to continue to explore
-            science even after you've left the museum..
+            science even after you've left the museum.
           </p>
         </div>
       </div>
@@ -148,7 +155,9 @@
     </main>
     <footer>
       <div class="logotext">
-        <img src="images/csmlogo2.png" alt="Community Science Museum Logo" />
+        <a href="index.html"
+          ><img src="images/csmlogo2.png" alt="Community Science Museum Logo"
+        /></a>
         <a href="index.html"> Community<span>Science</span>Museum </a>
       </div>
       <ul class="footerlinks">

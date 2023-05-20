@@ -8,6 +8,7 @@
       name="description"
       content="Make a lasting impact by getting involved with our community science museum. Explore donation opportunities to support our mission of promoting scientific education and discovery. Volunteer your time and expertise to contribute to our engaging programs and exhibits. Discover internship opportunities to gain hands-on experience in the world of science and museum operations."
     />
+    <link rel="icon" href="images/favicon.ico" type="favicon" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/getinvolved.css" />
     <link rel="stylesheet" href="css/header.css" />
@@ -18,20 +19,26 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/2435774798.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Community Science Museum | Get Involved</title>
   </head>
   <body>
     <header>
       <div class="logotext">
-        <img src="images/csmlogo2.png" alt="Community Science Museum Logo" />
+        <a href="index.html"
+          ><img src="images/csmlogo2.png" alt="Community Science Museum Logo"
+        /></a>
         <a href="index.html"> Community<span>Science</span>Museum </a>
       </div>
       <nav>
         <!-- burger menu -->
         <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox">
-          <i class="fa-solid fa-bars"></i>
-          <span class="visuallyhidden"></span>
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          <span class="visually-hidden">Menu Checkbox</span>
         </label>
         <!-- burger menu end -->
         <ul class="navlinks">
@@ -49,24 +56,41 @@
         </div>
       </div>
 
+      <div class="preformtext">
+        <h2>Ready to join us?</h2>
+        <p>Sign up below to stay involved and up to date.</p>
+      </div>
+
       <!-- form -->
 
       <section class="formcontainer">
         <form action="#" class="form">
+          <h2>Sign up for a free account</h2>
           <div class="inputwrap">
             <div class="inputfield">
-              <input type="text" placeholder="First name" />
+              <label for="first-name" class="visually-hidden">First name</label>
+              <input type="text" id="first-name" placeholder="First name" />
             </div>
             <div class="inputfield">
-              <input type="text" placeholder="Last name" />
+              <label for="last-name" class="visually-hidden">Last name</label>
+              <input type="text" id="last-name" placeholder="Last name" />
             </div>
           </div>
           <div class="inputfield">
-            <input type="text" placeholder="Create password" />
+            <label for="password" class="visually-hidden"
+              >Create password</label
+            >
+            <input
+              type="password"
+              id="password"
+              placeholder="Create password"
+            />
           </div>
           <div class="inputfield">
-            <input type="text" placeholder="Email address" />
+            <label for="email" class="visually-hidden">Email address</label>
+            <input type="email" id="email" placeholder="Email address" />
           </div>
+          <a class="button1" href="getinvolved.html">Sign up</a>
         </form>
       </section>
 
@@ -86,6 +110,18 @@
             think others would enjoy, please let us know by contacting our
             Collections Department and they will be able to assist you.
           </p>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 11C1.9 11 1 11.9 1 13V20C1 21.1 1.9 22 3 22C4.1 22 5 21.1 5 20V13C5 11.9 4.1 11 3 11ZM10 5.3C10 3.45 11.45 2 13.3 2C14.34 2 15.35 2.49 16 3.25C16.65 2.49 17.66 2 18.7 2C20.55 2 22 3.45 22 5.3C22 7.4 19.5 9.81 16.67 12.39C16.4857 12.5587 16.2449 12.6522 15.995 12.6522C15.7451 12.6522 15.5043 12.5587 15.32 12.39C12.5 9.81 10 7.4 10 5.3ZM19.99 17H13.16C13.0473 16.9995 12.9356 16.9792 12.83 16.94L11.36 16.43C11.2987 16.4087 11.2422 16.3755 11.1938 16.3322C11.1454 16.2888 11.1061 16.2364 11.0782 16.1777C11.0503 16.1191 11.0343 16.0556 11.0312 15.9907C11.0281 15.9259 11.0379 15.861 11.06 15.8C11.15 15.54 11.44 15.4 11.7 15.5L12.82 15.93C12.93 15.97 13.06 16 13.18 16H15.81C16.46 16 16.99 15.47 16.99 14.82C16.99 14.33 16.68 13.89 16.22 13.71L9.3 11.13C9.08 11.04 8.84 11 8.6 11H7V20.02L13.37 21.83C13.78 21.95 14.22 21.93 14.62 21.78L22 19C22 17.89 21.1 17 19.99 17Z"
+              fill="#D9E3FE"
+            />
+          </svg>
         </div>
         <div class="contribute">
           <h2>Volunteer</h2>
@@ -104,6 +140,25 @@
             contact us if you would like to find out more about how you can get
             involved.
           </p>
+          <svg
+            width="30"
+            height="24"
+            viewBox="0 0 30 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_143_509)">
+              <path
+                d="M22.875 9.00002H15.75V11.625C15.75 13.486 14.2359 15 12.375 15C10.514 15 8.99997 13.486 8.99997 11.625V5.92502L5.95778 7.75315C5.0531 8.29221 4.49997 9.2719 4.49997 10.3219V12.5391L0.74997 14.7047C0.032783 15.1172 -0.215654 16.036 0.201533 16.7531L3.95153 23.25C4.36403 23.9672 5.28278 24.211 5.99997 23.7985L10.8468 21H17.25C18.9047 21 20.25 19.6547 20.25 18H21C21.8297 18 22.5 17.3297 22.5 16.5V13.5H22.875C23.4984 13.5 24 12.9985 24 12.375V10.125C24 9.50159 23.4984 9.00002 22.875 9.00002ZM29.7984 7.2469L26.0484 0.750024C25.6359 0.0328361 24.7172 -0.210914 24 0.201586L19.1531 3.00002H14.3625C13.8 3.00002 13.2515 3.1594 12.7734 3.45471L11.2031 4.4344C10.7625 4.70627 10.5 5.18909 10.5 5.70471V11.625C10.5 12.661 11.339 13.5 12.375 13.5C13.4109 13.5 14.25 12.661 14.25 11.625V7.50002H22.875C24.3234 7.50002 25.5 8.67659 25.5 10.125V11.461L29.25 9.29534C29.9672 8.87815 30.2109 7.96409 29.7984 7.2469Z"
+                fill="#D9E3FE"
+              />
+            </g>
+            <defs>
+              <clippath id="clip0_143_509">
+                <rect width="30" height="24" fill="white" />
+              </clippath>
+            </defs>
+          </svg>
         </div>
         <div class="contribute">
           <h2>Internships</h2>
@@ -117,12 +172,34 @@
             who are passionate about science and sharing it with the wider
             community.
           </p>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.5 3.5C8.5 3.10218 8.65804 2.72064 8.93934 2.43934C9.22064 2.15804 9.60218 2 10 2H14C14.3978 2 14.7794 2.15804 15.0607 2.43934C15.342 2.72064 15.5 3.10218 15.5 3.5V4.5C15.5 4.89782 15.342 5.27936 15.0607 5.56066C14.7794 5.84196 14.3978 6 14 6H10C9.60218 6 9.22064 5.84196 8.93934 5.56066C8.65804 5.27936 8.5 4.89782 8.5 4.5V3.5ZM10 3C9.86739 3 9.74021 3.05268 9.64645 3.14645C9.55268 3.24021 9.5 3.36739 9.5 3.5V4.5C9.5 4.63261 9.55268 4.75979 9.64645 4.85355C9.74021 4.94732 9.86739 5 10 5H14C14.1326 5 14.2598 4.94732 14.3536 4.85355C14.4473 4.75979 14.5 4.63261 14.5 4.5V3.5C14.5 3.36739 14.4473 3.24021 14.3536 3.14645C14.2598 3.05268 14.1326 3 14 3H10Z"
+              fill="#D9E3FE"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9 3.5H6.5C6.10218 3.5 5.72064 3.65804 5.43934 3.93934C5.15804 4.22064 5 4.60218 5 5V20.5C5 20.8978 5.15804 21.2794 5.43934 21.5607C5.72064 21.842 6.10218 22 6.5 22H17.5C17.8978 22 18.2794 21.842 18.5607 21.5607C18.842 21.2794 19 20.8978 19 20.5V5C19 4.60218 18.842 4.22064 18.5607 3.93934C18.2794 3.65804 17.8978 3.5 17.5 3.5H15V4.5C15 4.76522 14.8946 5.01957 14.7071 5.20711C14.5196 5.39464 14.2652 5.5 14 5.5H10C9.73478 5.5 9.48043 5.39464 9.29289 5.20711C9.10536 5.01957 9 4.76522 9 4.5V3.5ZM7.5 10.5C7.5 10.3674 7.55268 10.2402 7.64645 10.1464C7.74021 10.0527 7.86739 10 8 10H11.5C11.6326 10 11.7598 10.0527 11.8536 10.1464C11.9473 10.2402 12 10.3674 12 10.5C12 10.6326 11.9473 10.7598 11.8536 10.8536C11.7598 10.9473 11.6326 11 11.5 11H8C7.86739 11 7.74021 10.9473 7.64645 10.8536C7.55268 10.7598 7.5 10.6326 7.5 10.5ZM8 7.5C7.86739 7.5 7.74021 7.55268 7.64645 7.64645C7.55268 7.74021 7.5 7.86739 7.5 8C7.5 8.13261 7.55268 8.25979 7.64645 8.35355C7.74021 8.44732 7.86739 8.5 8 8.5H15.75C15.8826 8.5 16.0098 8.44732 16.1036 8.35355C16.1973 8.25979 16.25 8.13261 16.25 8C16.25 7.86739 16.1973 7.74021 16.1036 7.64645C16.0098 7.55268 15.8826 7.5 15.75 7.5H8ZM8.5 14.5V15.5H9.5V14.5H8.5ZM8 13.5C7.86739 13.5 7.74021 13.5527 7.64645 13.6464C7.55268 13.7402 7.5 13.8674 7.5 14V16C7.5 16.1326 7.55268 16.2598 7.64645 16.3536C7.74021 16.4473 7.86739 16.5 8 16.5H10C10.1326 16.5 10.2598 16.4473 10.3536 16.3536C10.4473 16.2598 10.5 16.1326 10.5 16V14C10.5 13.8674 10.4473 13.7402 10.3536 13.6464C10.2598 13.5527 10.1326 13.5 10 13.5H8ZM15.5 14.5C15.5 14.8978 15.342 15.2794 15.0607 15.5607C14.7794 15.842 14.3978 16 14 16C13.6022 16 13.2206 15.842 12.9393 15.5607C12.658 15.2794 12.5 14.8978 12.5 14.5C12.5 14.1022 12.658 13.7206 12.9393 13.4393C13.2206 13.158 13.6022 13 14 13C14.3978 13 14.7794 13.158 15.0607 13.4393C15.342 13.7206 15.5 14.1022 15.5 14.5ZM14 16.659C12.9985 16.659 11 17.192 11 18.25V19.5H17V18.25C17 17.192 15.0015 16.659 14 16.659Z"
+              fill="#D9E3FE"
+            />
+          </svg>
         </div>
       </div>
     </main>
     <footer>
       <div class="logotext">
-        <img src="images/csmlogo2.png" alt="Community Science Museum Logo" />
+        <a href="index.html"
+          ><img src="images/csmlogo2.png" alt="Community Science Museum Logo"
+        /></a>
         <a href="index.html"> Community<span>Science</span>Museum </a>
       </div>
       <div class="footerlinks">

@@ -29,29 +29,38 @@
   transform: translate(-50%, -50%);
 }
 
+.preformtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 44px;
+  gap: 1rem;
+}
+
 .formcontainer {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 26px 0;
+  padding: 0 0 86px 0;
 }
 
 .form {
   background-color: #fff;
-  width: 700px;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 26px;
+  padding: 46px;
   border: 1px solid #1f1f1f;
+  border-radius: 4px;
 }
 
 .inputwrap {
   display: flex;
-  align-items: flex-start;
-  justify-content: end;
   flex-direction: row;
 }
 
@@ -59,6 +68,7 @@
   margin-top: 20px;
   padding: 12px;
   width: 100%;
+  max-width: 420px;
 }
 
 .inputfield input {
@@ -67,6 +77,49 @@
   width: 100%;
   outline: none;
   border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0 12px;
+}
+
+.button1 {
+  display: flex;
+}
+
+.button1 a,
+.button1 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: rgba(0, 86, 135, 1);
+  padding: 16px 18px;
+  margin: 18px 0 0 0;
+  max-width: 8rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 86, 135, 1);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button1:hover {
+  color: #fff;
+  background-color: rgb(0, 132, 209);
+  border: 1px solid rgb(0, 132, 209);
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /* contribute */
@@ -76,18 +129,23 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: rgba(217, 227, 254, 1);
+  padding: 36px 0;
 }
 
 .contribute {
   width: 100%;
-  max-width: 380px;
-  margin: 12px;
+  max-width: 420px;
+  margin: 16px;
   padding: 28px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .contribute h2 {
   font-weight: 600;
   font-size: 28px;
+  margin-top: 0;
 }
 
 .contribute p {
@@ -100,11 +158,52 @@
   color: #1f1f1f;
 }
 
-@media (max-width: 1024px) {
+.contribute svg {
+  width: 100%;
+  height: 120px;
+  margin: auto;
+}
+
+@media (max-width: 1124px) {
+  .bannercontainer {
+    min-height: 500px;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+  }
 }
 
 @media (max-width: 768px) {
+  .bannercontainer {
+    min-height: 400px;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media (max-width: 500px) {
+  .bannercontainer {
+    min-height: 350px;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+  }
 }
 
 @media (max-width: 400px) {
+  .bannercontainer {
+    min-height: 300px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  .inputwrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputfield {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    max-width: 200px;
+  }
 }

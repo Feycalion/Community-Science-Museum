@@ -8,6 +8,7 @@
       name="description"
       content="Immerse yourself in the captivating world of science and technology through our thought-provoking exhibitions. Explore a diverse range of interactive displays, hands-on exhibits, and engaging multimedia presentations. Discover the wonders of our current and upcoming exhibitions, each designed to inspire curiosity, spark innovation, and foster a deeper understanding of the world around us."
     />
+    <link rel="icon" href="images/favicon.ico" type="favicon" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/exhibitions.css" />
     <link rel="stylesheet" href="css/header.css" />
@@ -27,7 +28,9 @@
   <body>
     <header>
       <div class="logotext">
-        <img src="images/csmlogo2.png" alt="Community Science Museum Logo" />
+        <a href="index.html"
+          ><img src="images/csmlogo2.png" alt="Community Science Museum Logo"
+        /></a>
         <a href="index.html"> Community<span>Science</span>Museum </a>
       </div>
       <nav>
@@ -35,7 +38,8 @@
 
         <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          <span class="visually-hidden">Menu Checkbox</span>
         </label>
 
         <!-- burger menu end -->
@@ -237,7 +241,9 @@
 
     <footer>
       <div class="logotext">
-        <img src="images/csmlogo2.png" alt="Community Science Museum Logo" />
+        <a href="index.html"
+          ><img src="images/csmlogo2.png" alt="Community Science Museum Logo"
+        /></a>
         <a href="index.html"> Community<span>Science</span>Museum </a>
       </div>
       <ul class="footerlinks">

@@ -151,12 +151,15 @@
   align-items: center;
 }
 
-.desktopcontainer .box:nth-child(2) {
+.desktopcontainer .box:nth-child(2),
+.desktopcontainer .box:nth-child(4) {
   flex-direction: row-reverse;
 }
 
 .desktopcontainer .box:nth-child(2),
-.mobilecontainer .box:nth-child(2) {
+.mobilecontainer .box:nth-child(2),
+.desktopcontainer .box:nth-child(4),
+.mobilecontainer .box:nth-child(4) {
   background-color: rgba(217, 227, 254, 1);
 }
 

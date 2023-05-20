@@ -49,7 +49,7 @@ nav a,
 .logotext a {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 6px;
   font-size: 20px;
   line-height: 150%;
 }
@@ -61,6 +61,17 @@ nav a,
 header label,
 #menu-checkbox {
   display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  margin: -1px;
 }
 
 /* media cutoffs */
