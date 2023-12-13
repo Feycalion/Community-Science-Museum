@@ -1,4 +1,4 @@
-# :microscope: Community Science Museum
+# :ringed_planet: Community Science Museum
 
 ![csm](https://github.com/Feycalion/Community-Science-Museum/assets/90476295/de4860a3-b805-44bf-9545-ab4b465c3af2)
 
