@@ -2,11 +2,9 @@
 
 ![csm](https://github.com/Feycalion/Community-Science-Museum/assets/90476295/de4860a3-b805-44bf-9545-ab4b465c3af2)
 
-## Description
-
 For this assignment I had a month to design and build a website for a fictional Community Science Museum, using everything I had learned during the semester.
 
-## Assignment Brief
+## Description
 
 An interactive science museum called the Community Science Museum is opening in your town/city. 
 
